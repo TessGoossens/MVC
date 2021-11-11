@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace MVC_School.Data
 {
-    public class SchoolDbContext
+    public class SchoolDbContext : DbContext
     {
+
     }
 }
