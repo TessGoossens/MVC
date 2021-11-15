@@ -429,3 +429,13 @@ C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\MVC-School.dll
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\ref\MVC-School.dll
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\MVC-School.pdb
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\MVC-School.genruntimeconfig.cache
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Studenten\Create.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Studenten\Delete.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Studenten\Details.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Studenten\Edit.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Studenten\Index.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Create.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Delete.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Details.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Edit.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Index.cshtml.g.cs
