@@ -439,3 +439,8 @@ C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Lo
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Details.cshtml.g.cs
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Edit.cshtml.g.cs
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Index.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Create.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Delete.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Details.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Edit.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Index.cshtml.g.cs

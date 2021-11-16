@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using MVC_School.Data;
 using MVC_School.Models;
 
-namespace MVC_School.Migrations
+namespace MVC_School.Controllers
 {
     public class DocentenController : Controller
     {
@@ -22,8 +22,12 @@ namespace MVC_School.Migrations
         // GET: Docenten
         public async Task<IActionResult> Index()
         {
-            var schoolDbContext = _context.Docenten.Include(d => d.Locatie);
-            return View(await schoolDbContext.ToListAsync());
+            var docenten = await _context.Docenten
+                .Include(d => d.Locatie)
+                .ToArrayAsync();
+            return View(docenten);
+           // var schoolDbContext = _context.Docenten.Include(d => d.Locatie);
+           // return View(await schoolDbContext.ToListAsync());
         }
 
         // GET: Docenten/Details/5
@@ -48,7 +52,7 @@ namespace MVC_School.Migrations
         // GET: Docenten/Create
         public IActionResult Create()
         {
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "ID");
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "Naam");
             return View();
         }
 
@@ -65,7 +69,7 @@ namespace MVC_School.Migrations
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "ID", docent.LocatieId);
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "naam", docent.LocatieId);
             return View(docent);
         }
 
@@ -82,7 +86,7 @@ namespace MVC_School.Migrations
             {
                 return NotFound();
             }
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "ID", docent.LocatieId);
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "Naam", docent.LocatieId);
             return View(docent);
         }
 
@@ -118,7 +122,7 @@ namespace MVC_School.Migrations
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "ID", docent.LocatieId);
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "Naam", docent.LocatieId);
             return View(docent);
         }
 

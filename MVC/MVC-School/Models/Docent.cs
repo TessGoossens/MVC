@@ -18,6 +18,7 @@ namespace MVC_School.Models
         public string Achternaam { get; set; }
 
         [ForeignKey("Locatie")]
+        [Display(Name = "Locatie")]
         public int LocatieId { get; set; }
 
         // dit is de navigatie propperty
