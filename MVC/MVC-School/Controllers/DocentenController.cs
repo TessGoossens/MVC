@@ -52,7 +52,7 @@ namespace MVC_School.Controllers
         // GET: Docenten/Create
         public IActionResult Create()
         {
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "Naam");
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "Naam");
             return View();
         }
 
@@ -69,7 +69,7 @@ namespace MVC_School.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "naam", docent.LocatieId);
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "naam", docent.LocatieId);
             return View(docent);
         }
 
@@ -86,7 +86,7 @@ namespace MVC_School.Controllers
             {
                 return NotFound();
             }
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "Naam", docent.LocatieId);
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "Naam", docent.LocatieId);
             return View(docent);
         }
 
@@ -122,7 +122,7 @@ namespace MVC_School.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LocatieId"] = new SelectList(_context.Locaties, "id", "Naam", docent.LocatieId);
+            ViewData["LocatieId"] = new SelectList(_context.Locaties, "ID", "Naam", docent.LocatieId);
             return View(docent);
         }
 

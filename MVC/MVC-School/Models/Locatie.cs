@@ -24,5 +24,7 @@ namespace MVC_School.Models
         public string Woonplaats { get; set; }
 
         public ICollection<Docent> Docenten { get; set; }
+      //  public ICollection<Vak> Vakken { get; set; }
+       
     }
 }

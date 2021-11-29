@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MVC_School.Models.Docent>
+
+
+<h1>Docenten</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Voornaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Achternaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Locatie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VakId)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Voornaam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Achternaam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Locatie.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VakId)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

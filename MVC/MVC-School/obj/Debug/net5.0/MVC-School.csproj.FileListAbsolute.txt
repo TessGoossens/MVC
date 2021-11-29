@@ -444,3 +444,10 @@ C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Do
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Details.cshtml.g.cs
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Edit.cshtml.g.cs
 C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Index.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Vaken\Create.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Vaken\Delete.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Vaken\Details.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Vaken\Edit.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Vaken\Index.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Locaties\Components\LocatieDocenten\Default.cshtml.g.cs
+C:\xampp\htdocs\leerjaar 2\c#\MVC\MVC\MVC-School\obj\Debug\net5.0\Razor\Views\Docenten\Components\DocentVakken\Default.cshtml.g.cs

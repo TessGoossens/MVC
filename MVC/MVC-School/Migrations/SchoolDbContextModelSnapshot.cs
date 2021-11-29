@@ -32,6 +32,9 @@ namespace MVC_School.Migrations
                     b.Property<int>("LocatieId")
                         .HasColumnType("int");
 
+                    b.Property<int>("VakId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Voornaam")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
@@ -40,7 +43,7 @@ namespace MVC_School.Migrations
 
                     b.HasIndex("LocatieId");
 
-                    b.ToTable("Docenten");
+                    b.ToTable("Docent");
                 });
 
             modelBuilder.Entity("MVC_School.Models.Locatie", b =>
@@ -95,6 +98,27 @@ namespace MVC_School.Migrations
                     b.ToTable("Studenten");
                 });
 
+            modelBuilder.Entity("MVC_School.Models.Vak", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("DocentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Naam")
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("DocentId");
+
+                    b.ToTable("Vak");
+                });
+
             modelBuilder.Entity("MVC_School.Models.Docent", b =>
                 {
                     b.HasOne("MVC_School.Models.Locatie", "Locatie")
@@ -104,6 +128,22 @@ namespace MVC_School.Migrations
                         .IsRequired();
 
                     b.Navigation("Locatie");
+                });
+
+            modelBuilder.Entity("MVC_School.Models.Vak", b =>
+                {
+                    b.HasOne("MVC_School.Models.Docent", "Docent")
+                        .WithMany("Vakken")
+                        .HasForeignKey("DocentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Docent");
+                });
+
+            modelBuilder.Entity("MVC_School.Models.Docent", b =>
+                {
+                    b.Navigation("Vakken");
                 });
 
             modelBuilder.Entity("MVC_School.Models.Locatie", b =>
