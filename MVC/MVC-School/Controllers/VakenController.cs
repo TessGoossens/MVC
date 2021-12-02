@@ -48,7 +48,7 @@ namespace MVC_School.Controllers
         // GET: Vaken/Create
         public IActionResult Create()
         {
-            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "Naam");
+            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "ID");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace MVC_School.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "Naam", vak.DocentId);
+            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "ID", vak.DocentId);
             return View(vak);
         }
 
@@ -82,7 +82,7 @@ namespace MVC_School.Controllers
             {
                 return NotFound();
             }
-            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "Naam", vak.DocentId);
+            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "ID", vak.DocentId);
             return View(vak);
         }
 
@@ -118,7 +118,7 @@ namespace MVC_School.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "Naam", vak.DocentId);
+            ViewData["DocentId"] = new SelectList(_context.Docenten, "ID", "ID", vak.DocentId);
             return View(vak);
         }
 
