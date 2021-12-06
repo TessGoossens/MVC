@@ -9,6 +9,10 @@ namespace MVC_School.Models
 {
     public class Vak
     {
+        public Vak()
+        {
+            VakStudenten = new HashSet<VakStudent>();
+        }
         public int ID { get; set; }
 
         [MaxLength(40)]
@@ -20,5 +24,7 @@ namespace MVC_School.Models
 
         // dit is de navigatie propperty
         public virtual Docent Docent { get; set; }
+
+        public ICollection<VakStudent> VakStudenten { get; set; }
     }
 }

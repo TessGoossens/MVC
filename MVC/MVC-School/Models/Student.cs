@@ -8,6 +8,10 @@ namespace MVC_School.Models
 {
     public class Student
     {
+        public Student()
+        {
+            StudentVakken = new HashSet<VakStudent>();
+        }
         public int ID { get; set; }
 
         [MaxLength(20)]
@@ -21,6 +25,8 @@ namespace MVC_School.Models
 
         [MaxLength(40)]
         public string Woonplaats { get; set; }
-        
+
+        public ICollection<VakStudent> StudentVakken { get; set; }
+
     }
 }

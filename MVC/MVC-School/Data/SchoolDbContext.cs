@@ -13,6 +13,7 @@ namespace MVC_School.Data
         public DbSet<Locatie> Locaties { get; set; }
         public DbSet<Docent> Docenten { get; set; }
         public DbSet<Docent> Vakken { get; set; }
+        public DbSet<Docent> VakStudenten { get; set; }
 
         public SchoolDbContext(DbContextOptions<SchoolDbContext> options) : base(options)
         {
@@ -20,6 +21,8 @@ namespace MVC_School.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<VakStudent>()
+                .HasKey(vs => new { vs.StudentId, vs.VakId });
         }
         public DbSet<MVC_School.Models.Vak> Vak { get; set; }
     }
